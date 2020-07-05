@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--
+Author:  Usevalad Khatkevich
+Website: https://my77thblog.pp.ua/
+         https://github.com/SEVA77/TemplateOfMyBlog
+License: MIT License (see LICENSE)
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>Test site</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/slide-menu.css">
+  <script type="text/javascript" src="assets/js/slide-menu.js"></script>
+  <script src="assets/js/sys.js"></script>
+  <link rel="stylesheet" href="assets/css/atelier-forest-light.css">
+  <script src="assets/js/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+
+<body>
+  <script type="text/javascript">
+    (async () => {
+      for (let node of document.getElementsByTagName('img')) {
+        await new Promise(res => {
+          node.src = node.dataset.src;
+          node.onload = () => res();
+        })
+      }
+    })()
+  </script>
+  <div class="container">
+    <header id="header">
+
+      <div class="header_inner">
+        <div class="header_logo"><a href="#"><img src="img-111/final_logo2_var2.png"></a></div>
+
+        <nav class="header_nav">
+          <a class="nav_link" href="javascript:menu_click();">Разделы</a>
+          <a class="nav_link" href="javascript:alert('Раздел в разработке')">Проекты</a>
+          <a class="nav_link" href="#">Обо мне</a>
+          <a class="nav_link" href="#">Контакты</a>
+
+        </nav>
+      </div>
+
+    </header>
+    <div class="intro">
+
+      <p class="text_intro">
+        <img src="assets/img/post%20divider_scroll.png"><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolorem atque molestias magnam sint nesciunt. Enim voluptate aliquid suscipit, sit. Explicabo ut ullam laboriosam asperiores perferendis, ad, inventore qui incidunt.<br>
+        <img src="assets/img/post%20divider_scroll.png" style="transform: scaleY(-1);">
+      </p>
+    </div>
+  </div>
+
+  <!--САЙДБАРЫ И КОНТЕНТ-->
+  <div id="flexcontainer">
+
+    <div class="content">
+      <!--контент-->
+
+      <div class="article">
+        <div class="article_tape"></div>
+        <div class="article_tape4"></div>
+        <!--декорация-->
+        <h2 class="a_title">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </h2>
+        <div class="article_flex">
+          <div class="article_img">
+            <div class="article_img_tape"></div><img src="/img-111/maxresdefault.jpg">
+          </div>
+
+          <p class="article_txt">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati veritatis nesciunt, molestiae corrupti quaerat!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, eos suscipit recusandae laboriosam, nulla error quod itaque soluta, perferendis explicabo quibusdam quam optio maiores ut pariatur beatae voluptatum debitis. A.
+          </p>
+        </div>
+        <a class="a_button" href="#">Подробнее...</a>
+      </div>
+      <div class="article">
+        <div class="article_tape"></div>
+        <div class="article_tape4"></div>
+        <!--декорация-->
+        <h2 class="a_title">
+          Lorem ipsum dolor...
+        </h2>
+        <div class="article_flex">
+          <div class="article_img">
+            <div class="article_img_tape"></div><img src="/img-111/hqdefault.jpg">
+          </div>
+          <p class="article_txt">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati veritatis nesciunt, molestiae corrupti quaerat! Laudantium iste accusamus, ad ipsum dolorum, soluta tempora ducimus explicabo, pariatur et doloremque adipisci similique amet?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quos tempore veniam saepe voluptatibus, maxime doloribus voluptates voluptate a, cum nobis? Reiciendis sint ipsum animi quibusdam minima eveniet quod fugiat.
+          </p>
+        </div>
+        <a class="a_button" href="#">Подробнее...</a>
+      </div>
+    </div>
+
+
+    <div class="sidebarr">
+      <!--правый сайдбар-->
+
+      <div class="sb_block">
+        <!--блоки для правого сайдбара-->
+        <div class="sb_title"><b>Разделы блога</b></div>
+        <nav class="slide-menu" id="example-menu">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+              <ul>
+                <li><a href="#">Submenu entry 1</a></li>
+                <li><a href="#">Submenu entry 2</a></li>
+                <li><a href="#">Submenu entry 3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="f_cont">
+      <div class="f_info">
+        <b>Автор блога: В.А. Хаткевич (SEVA77, 4SEVA77, CEBA77)<br>Копирование контента и размещение на других сайтах запрещено.</b>
+      </div>
+      <div class="f_icons">
+        <a href="#"><img src="assets/img/icons/Rss_.png" alt="Rss"></a>
+        <a href="#"><img src="assets/img/icons/Github_.png" alt="Github"></a>
+        <a href="#"><img src="assets/img/icons/Twitter_.png" alt="Twitter"></a>
+        <a href="#"><img src="assets/img/icons/Vk_.png" alt="VK"></a>
+        <a href="#"><img src="assets/img/icons/Youtube_.png" alt="Youtube"></a>
+        <a href="#"><img src="assets/img/icons/Instagram_.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+  <!--Вспомогательные элементы-->
+  <div id="modal_menu" class="modal_div">
+    <span class="modal_close">Закрыть</span>
+    <!--Здесь размещаем информацию которая будет в модальном окне.-->
+  </div>
+  <div class="overlay" onclick="close_menu()"></div><!-- Пoдлoжкa, oднa нa всю стрaницу -->
+
+</body>
+
+</html>

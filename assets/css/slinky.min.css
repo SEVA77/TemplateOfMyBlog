@@ -1,0 +1,88 @@
+.slinky-menu {
+    overflow: hidden;
+    transform: translateZ(0);
+    margin: 5px;
+    width: auto;
+    padding: 3px;
+    position:relative;
+    background: -webkit-gradient(linear, 0% 20%, 0% 92%, from(#fff), to(#f3f3f3), color-stop(.1,#fff));
+    background: -moz-linear-gradient(0 0 270deg, #fff, #fff 10%, #f3f3f3);
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+  .slinky-menu > ul {
+    left: 0;
+    position: relative;
+    transform: translateZ(0); }
+  .slinky-menu ul,
+  .slinky-menu li {
+    padding-inline-start: 0px;
+    list-style: none;
+    margin: 0; }
+  .slinky-menu ul {
+    width: 100%; }
+  .slinky-menu a {
+      text-decoration: none;
+    align-items: center;
+    display: flex; }
+    .slinky-menu a span {
+      flex: 1;
+      line-height: 1.4; }
+  .slinky-menu li ul {
+    padding-inline-start: 0px;
+    display: none;
+    left: 100%;
+    position: absolute;
+    top: 0; }
+  .slinky-menu .header {
+    display: flex; }
+    .slinky-menu .header .title {
+      flex: 1;
+      line-height: 1.4;
+      margin: 0;
+      order: 1; }
+
+.slinky-theme-default {
+  background: #f6f7f8; }
+  .slinky-theme-default .title {
+    text-transform: uppercase;
+      font-size: 14px;
+      align-items: center;
+      font-weight: 700;
+    padding: 1em; }
+  .slinky-theme-default li {
+    line-height: 1; }
+  .slinky-theme-default a:not(.back) {
+    color: #333;
+    padding: 8px; }
+    .slinky-theme-default a:not(.back):hover {
+      background: rgba(0, 0, 0, 0.1); }
+    .slinky-theme-default a:not(.back):active {
+      background: rgba(0, 0, 0, 0.25); }
+  .slinky-theme-default .next::after,
+  .slinky-theme-default .back::before {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+ICAgIDxwYXRoIGQ9Ik0xMi4yMTkgMi4yODFMMTAuNzggMy43MiAxOC4wNjIgMTFIMnYyaDE2LjA2M2wtNy4yODIgNy4yODEgMS40MzggMS40MzggOS05IC42ODctLjcxOS0uNjg3LS43MTl6IiAvPjwvc3ZnPg==) center no-repeat;
+    background-size: 1em;
+    content: '';
+    height: 1em;
+    opacity: 0.25;
+    transition: 200ms;
+    width: 1em; }
+  .slinky-theme-default .next::after {
+    margin-left: 1em; }
+  .slinky-theme-default .back::before {
+    padding: 1em;
+    transform: scaleX(-1); }
+  .slinky-theme-default .next:hover::after,
+  .slinky-theme-default .back:hover::before {
+    opacity: 0.75; }
+  .slinky-theme-default .next:active::after,
+  .slinky-theme-default .back:active::before {
+    opacity: 1; }
+
+
+/*# sourceMappingURL=slinky.min.css.map*/
