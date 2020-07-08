@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //.sidebarr
 function menu_click() {
-  if (document.body.clientWidth < 916) {
+  if (document.body.clientWidth < 948) {
     document.querySelectorAll(".sidebarr").forEach(sidebarr => {
       sidebarr.style.display = "block"
     });
