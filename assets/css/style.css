@@ -432,9 +432,9 @@ blockquote:before {
   content: "";
   position: absolute;
   top: -4px;
-  left: 105px;
+  left: 111px;
   z-index: 100;
-  width: 60px;
+  width: 65px;
   height: 40px;
   background: rgba(0, 0, 0, 0.1);
   border-left: .7px solid rgba(0, 0, 0, 0.1);
@@ -558,7 +558,9 @@ blockquote:before {
   }
 
   .article_img_tape {
-    left: 24vw;
+    left: 23vw;
+    top: -8px;
+    width: 80px;
   }
 }
 
@@ -637,7 +639,9 @@ blockquote:before {
   }
 
   .article_img_tape {
-    left: 110px;
+    left: 115px;
+    top: -4px;
+    width: 65px;
   }
 }
 
@@ -678,7 +682,8 @@ blockquote:before {
   }
 
   .article_img_tape {
-    left: 38vw;
+    left: 34vw;
+    width: 88px;
   }
 }
 
@@ -696,7 +701,7 @@ blockquote:before {
   }
 
   .article_img{
-    padding: 23px 23px 70px 23px;
+    padding: 21px 21px 68px 21px;
   }
 
   .f_info {
