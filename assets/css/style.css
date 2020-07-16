@@ -406,7 +406,7 @@ blockquote:before {
 
 .article_img {
   margin: 12px 15px 15px 15px;
-  padding: 10px;
+  padding: 15px 15px 60px 15px;
   background-color: white;
   display: flex;
   box-sizing: border-box;
@@ -545,6 +545,7 @@ blockquote:before {
 
   .article_img {
     margin: 12px auto 10px auto;
+    padding: 23px 23px 75px 23px;
   }
 
   .article_flex {
@@ -619,6 +620,10 @@ blockquote:before {
     margin: 4px;
   }
 
+  .article_img{
+    padding: 15px 15px 60px 15px;
+  }
+
   .article_img img {
     width: 225px;
   }
@@ -660,6 +665,7 @@ blockquote:before {
 
   .article_img {
     margin: 12px auto 10px auto;
+    padding: 27px 27px 90px 27px;
   }
 
   .article_flex {
@@ -687,6 +693,10 @@ blockquote:before {
   .header_logo > a > img {
     height: 70px;
     margin: 0 20px;
+  }
+
+  .article_img{
+    padding: 23px 23px 70px 23px;
   }
 
   .f_info {
