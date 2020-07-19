@@ -290,6 +290,12 @@ blockquote:before {
   float: left;
 }
 
+code{
+  background-color: #CCCCCC;
+  padding: 0 2px;
+  border-radius: 3px
+}
+
 .paper h1,.paper h2,.paper h3,.paper h4,.paper h5,.paper h6,.paper p,.paper pre,.paper ul,.paper ol,.paper dl,.paper table,.paper blockquote {
   margin-bottom: 20px;
 }
