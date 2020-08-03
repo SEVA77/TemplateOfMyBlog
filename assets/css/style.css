@@ -24,6 +24,7 @@ body {
 
 h1,h2,h3,h4,h5 {
   margin: 3px;
+  line-height: 1.2;
 }
 
 /*Контейнер*/
@@ -405,6 +406,7 @@ code{
 .a_title {
   margin: 4px 20px;
   /*position: absolute;*/
+  line-height: 1.2;
   display: block;
   left: 0;
   top: 0
