@@ -6,286 +6,308 @@ Website: https://my77thblog.pp.ua/
          https://github.com/SEVA77/TemplateOfMyBlog
 License: MIT License (see LICENSE)
 -->
+
 <head>
-    <meta charset="UTF-8">
-    <title>Test site</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/slide-menu.css">
-    <script type="text/javascript" src="assets/js/slide-menu.js"></script>
- <script src="assets/js/sys.js"></script>
- <link rel="stylesheet" href="assets/css/atelier-forest-light.css">
-<script src="assets/js/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+  <meta charset="UTF-8">
+  <title>Test site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/slide-menu.css">
+  <script type="text/javascript" src="assets/js/slide-menu.js"></script>
+  <script src="assets/js/sys.js"></script>
+  <link rel="stylesheet" href="assets/css/atelier-forest-light.css">
+  <script src="assets/js/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
 </head>
 
 <body>
-    <script type="text/javascript">
-        (async () => {
-            for (let node of document.getElementsByTagName('img')) {
-                await new Promise(res => {
-                    node.src = node.dataset.src;
-                    node.onload = () => res();
-                })
-            }
-        })()
-    </script>
-    <div class="container">
-        <header id="header">
+  <script type="text/javascript">
+    (async () => {
+      for (let node of document.getElementsByTagName('img')) {
+        await new Promise(res => {
+          node.src = node.dataset.src;
+          node.onload = () => res();
+        })
+      }
+    })()
 
-            <div class="header_inner">
-                <div class="header_logo"><a href="#"><img src="assets/final_logo2_var2.png"></a></div>
+  </script>
+  <div class="container">
+    <header id="header">
 
-                <nav class="header_nav">
-                    <a class="nav_link" href="javascript:menu_click();">Разделы</a>
-                    <a class="nav_link" href="#">Проекты</a>
-                    <a class="nav_link" href="#">Обо мне</a>
-                    <a class="nav_link" href="#">Контакты</a>
+      <div class="header_inner">
+        <div class="header_logo"><a href="#"><img src="assets/final_logo2_var2.png"></a></div>
 
-                </nav>
-            </div>
-        </header>
-        <div class="intro">
+        <nav class="header_nav">
+          <a class="nav_link" href="javascript:menu_click();">Разделы</a>
+          <a class="nav_link" href="#">Проекты</a>
+          <a class="nav_link" href="#">Обо мне</a>
+          <a class="nav_link" href="#">Контакты</a>
 
-            <p class="text_intro">
-               <img src="assets/img/post%20divider_scroll.png"><br>
-                Добро пожаловать в мой личный блог! Надеюсь, ты найдешь здесь что-то интересное... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolorem atque molestias magnam sint nesciunt. Enim voluptate aliquid suscipit, sit. Explicabo ut ullam laboriosam asperiores perferendis, ad, inventore qui incidunt.
-<br>
-                <img src="assets/img/post%20divider_scroll.png"  style="transform: scaleY(-1);">
-            </p>
-        </div>
+        </nav>
+      </div>
+    </header>
+    <div class="intro">
+
+      <p class="text_intro">
+        <img src="assets/img/post%20divider_scroll.png"><br>
+        Добро пожаловать в мой личный блог! Надеюсь, ты найдешь здесь что-то интересное... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolorem atque molestias magnam sint nesciunt. Enim voluptate aliquid suscipit, sit. Explicabo ut ullam laboriosam asperiores perferendis, ad, inventore qui incidunt.
+        <br>
+        <img src="assets/img/post%20divider_scroll.png" style="transform: scaleY(-1);">
+      </p>
     </div>
+  </div>
 
-    <!--САЙДБАРЫ И КОНТЕНТ-->
-    <div id="flexcontainer">
+  <!--САЙДБАРЫ И КОНТЕНТ-->
+  <div id="flexcontainer">
 
-        <div class="content">
-            <!--контент-->
-       <div class="paper">
-          <h1>Article title</h1>
-          <h2>Random text:</h2>
-           <p>An apple is a sweet, edible fruit produced by an apple tree.</p>
+    <div class="content">
+      <!--контент-->
+      <div class="paper">
+        <h1>Article title</h1>
+        <h2>Random text:</h2>
+        <p>An apple is a sweet, edible fruit produced by an apple tree.</p>
 
-<p>Apple trees are cultivated worldwide, and are the most widely grown species in
-the genus Malus. The tree originated in Central Asia, where its wild ancestor,
-Malus sieversii, is still found today. Apples have been grown for thousands of
-years in Asia and Europe, and were brought to North America by European
-colonists.</p>
+        <p>Apple trees are cultivated worldwide, and are the most widely grown species in
+          the genus Malus. The tree originated in Central Asia, where its wild ancestor,
+          Malus sieversii, is still found today. Apples have been grown for thousands of
+          years in Asia and Europe, and were brought to North America by European
+          colonists.</p>
 
-<p>This text from <a href="https://github.com/pages-themes/time-machine" target="_blank">time-machine</a> theme:</p>
+        <p>This text from <a href="https://github.com/pages-themes/time-machine" target="_blank">time-machine</a> theme:</p>
 
-<p>There should be whitespace between paragraphs.</p>
+        <p>There should be whitespace between paragraphs.</p>
 
-<h1 id="header-1">Header 1</h1>
+        <h1 id="header-1">Header 1</h1>
 
-<p>This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.</p>
+        <p>This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.</p>
 
-<h2 id="header-2">Header 2</h2>
+        <h2 id="header-2">Header 2</h2>
 
-<blockquote>
-  <p>This is a blockquote following a header.</p>
+        <blockquote>
+          <p>This is a blockquote following a header.</p>
 
-  <p>When something is important enough, you do it even if the odds are not in your favor.</p>
-</blockquote>
+          <p>When something is important enough, you do it even if the odds are not in your favor.</p>
+        </blockquote>
 
-<h3 id="header-3">Header 3</h3>
+        <h3 id="header-3">Header 3</h3>
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Javascript code with syntax highlighting.</span>
+        <div class="language-js highlighter-rouge">
+          <div class="highlight">
+            <pre class="highlight"><code><span class="c1">// Javascript code with syntax highlighting.</span>
 <span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">lang</span><span class="p">(</span><span class="nx">l</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">dateformat</span><span class="p">.</span><span class="nx">i18n</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'./lang/'</span> <span class="o">+</span> <span class="nx">l</span><span class="p">)</span>
   <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div></div>
+</code></pre>
+          </div>
+        </div>
 
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Ruby code with syntax highlighting</span>
+        <div class="language-ruby highlighter-rouge">
+          <div class="highlight">
+            <pre class="highlight"><code><span class="c1"># Ruby code with syntax highlighting</span>
 <span class="no">GitHubPages</span><span class="o">::</span><span class="no">Dependencies</span><span class="p">.</span><span class="nf">gems</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">gem</span><span class="p">,</span> <span class="n">version</span><span class="o">|</span>
   <span class="n">s</span><span class="p">.</span><span class="nf">add_dependency</span><span class="p">(</span><span class="n">gem</span><span class="p">,</span> <span class="s2">"= </span><span class="si">#{</span><span class="n">version</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="k">end</span>
-</code></pre></div></div>
+</code></pre>
+          </div>
+        </div>
 
-<h4 id="header-4">Header 4</h4>
+        <h4 id="header-4">Header 4</h4>
 
-<ul>
-  <li>This is an unordered list following a header.</li>
-  <li>This is an unordered list following a header.</li>
-  <li>This is an unordered list following a header.</li>
-</ul>
-
-<h5 id="header-5">Header 5</h5>
-
-<ol>
-  <li>This is an ordered list following a header.</li>
-  <li>This is an ordered list following a header.</li>
-  <li>This is an ordered list following a header.</li>
-</ol>
-
-<h6 id="header-6">Header 6</h6>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">head1</th>
-      <th style="text-align: left">head two</th>
-      <th style="text-align: left">three</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good swedish fish</td>
-      <td style="text-align: left">nice</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">out of stock</td>
-      <td style="text-align: left">good and plenty</td>
-      <td style="text-align: left">nice</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good <code class="highlighter-rouge">oreos</code></td>
-      <td style="text-align: left">hmm</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good <code class="highlighter-rouge">zoute</code> drop</td>
-      <td style="text-align: left">yumm</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="theres-a-horizontal-rule-below-this">There’s a horizontal rule below this.</h3>
-
-<hr />
-
-<h3 id="here-is-an-unordered-list">Here is an unordered list:</h3>
-
-<ul>
-  <li>Item foo</li>
-  <li>Item bar</li>
-  <li>Item baz</li>
-  <li>Item zip</li>
-</ul>
-
-<h3 id="and-an-ordered-list">And an ordered list:</h3>
-
-<ol>
-  <li>Item one</li>
-  <li>Item two</li>
-  <li>Item three</li>
-  <li>Item four</li>
-</ol>
-
-<h3 id="and-a-nested-list">And a nested list:</h3>
-
-<ul>
-  <li>level 1 item
-    <ul>
-      <li>level 2 item</li>
-      <li>level 2 item
         <ul>
-          <li>level 3 item</li>
-          <li>level 3 item</li>
+          <li>This is an unordered list following a header.</li>
+          <li>This is an unordered list following a header.</li>
+          <li>This is an unordered list following a header.</li>
         </ul>
-      </li>
-    </ul>
-  </li>
-  <li>level 1 item
-    <ul>
-      <li>level 2 item</li>
-      <li>level 2 item</li>
-      <li>level 2 item</li>
-    </ul>
-  </li>
-  <li>level 1 item
-    <ul>
-      <li>level 2 item</li>
-      <li>level 2 item</li>
-    </ul>
-  </li>
-  <li>level 1 item</li>
-</ul>
 
-<h3 id="small-image">Small image</h3>
+        <h5 id="header-5">Header 5</h5>
 
-<p><img src="https://placehold.it/64x64" alt="64x64"></p>
+        <ol>
+          <li>This is an ordered list following a header.</li>
+          <li>This is an ordered list following a header.</li>
+          <li>This is an ordered list following a header.</li>
+        </ol>
 
-<h3 id="large-image">Large image</h3>
+        <h6 id="header-6">Header 6</h6>
 
-<p><img src="https://placehold.it/2098x528" alt="2098x528"></p>
+        <table>
+          <thead>
+            <tr>
+              <th style="text-align: left">head1</th>
+              <th style="text-align: left">head two</th>
+              <th style="text-align: left">three</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: left">ok</td>
+              <td style="text-align: left">good swedish fish</td>
+              <td style="text-align: left">nice</td>
+            </tr>
+            <tr>
+              <td style="text-align: left">out of stock</td>
+              <td style="text-align: left">good and plenty</td>
+              <td style="text-align: left">nice</td>
+            </tr>
+            <tr>
+              <td style="text-align: left">ok</td>
+              <td style="text-align: left">good <code class="highlighter-rouge">oreos</code></td>
+              <td style="text-align: left">hmm</td>
+            </tr>
+            <tr>
+              <td style="text-align: left">ok</td>
+              <td style="text-align: left">good <code class="highlighter-rouge">zoute</code> drop</td>
+              <td style="text-align: left">yumm</td>
+            </tr>
+          </tbody>
+        </table>
 
-<h3 id="definition-lists-can-be-used-with-html-syntax">Definition lists can be used with HTML syntax.</h3>
+        <h3 id="theres-a-horizontal-rule-below-this">There’s a horizontal rule below this.</h3>
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+        <hr />
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-</code></pre></div></div>
+        <h3 id="here-is-an-unordered-list">Here is an unordered list:</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The final element.
-</code></pre></div></div>
+        <ul>
+          <li>Item foo</li>
+          <li>Item bar</li>
+          <li>Item baz</li>
+          <li>Item zip</li>
+        </ul>
 
-       </div>
+        <h3 id="and-an-ordered-list">And an ordered list:</h3>
 
+        <ol>
+          <li>Item one</li>
+          <li>Item two</li>
+          <li>Item three</li>
+          <li>Item four</li>
+        </ol>
+
+        <h3 id="and-a-nested-list">And a nested list:</h3>
+
+        <ul>
+          <li>level 1 item
+            <ul>
+              <li>level 2 item</li>
+              <li>level 2 item
+                <ul>
+                  <li>level 3 item</li>
+                  <li>level 3 item</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>level 1 item
+            <ul>
+              <li>level 2 item</li>
+              <li>level 2 item</li>
+              <li>level 2 item</li>
+            </ul>
+          </li>
+          <li>level 1 item
+            <ul>
+              <li>level 2 item</li>
+              <li>level 2 item</li>
+            </ul>
+          </li>
+          <li>level 1 item</li>
+        </ul>
+
+        <h3 id="small-image">Small image</h3>
+
+        <p><img src="https://placehold.it/64x64" alt="64x64"></p>
+
+        <h3 id="large-image">Large image</h3>
+
+        <p><img src="https://placehold.it/2098x528" alt="2098x528"></p>
+
+        <h3 id="definition-lists-can-be-used-with-html-syntax">Definition lists can be used with HTML syntax.</h3>
+
+        <dl>
+          <dt>Name</dt>
+          <dd>Godzilla</dd>
+          <dt>Born</dt>
+          <dd>1952</dd>
+          <dt>Birthplace</dt>
+          <dd>Japan</dd>
+          <dt>Color</dt>
+          <dd>Green</dd>
+        </dl>
+
+        <div class="highlighter-rouge">
+          <div class="highlight">
+            <pre class="highlight"><code>Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+</code></pre>
+          </div>
         </div>
 
-
-        <div class="sidebarr"> <!--правый сайдбар-->
-
-<div class="sb_block"> <!--блоки для правого сайдбара-->
-<div class="sb_title"><b>Разделы блога</b></div>
-<nav class="slide-menu" id="example-menu">
-  <ul>
-    <li>
-      <a href="#">Home</a>
-      <ul>
-        <li><a href="#">Submenu entry 1</a></li>
-        <li><a href="#">Submenu entry 2</a></li>
-        <li><a href="#">Submenu entry 3</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#">Blog</a>
-    </li>
-    <li>
-      <a href="#">About</a>
-    </li>
-  </ul>
-</nav>
-</div>
-            </div>
+        <div class="highlighter-rouge">
+          <div class="highlight">
+            <pre class="highlight"><code>The final element.
+</code></pre>
+          </div>
         </div>
 
-    <footer class="footer">
-       <div class="f_cont">
-        <div class="f_info">
-            <b>Автор блога: В.А. Хаткевич (SEVA77, 4SEVA77, CEBA77)<br>Копирование контента и размещение на других сайтах запрещено.</b>
-        </div>
-        <div class="f_icons">
+      </div>
+
+    </div>
+
+
+    <div class="sidebarr">
+      <!--правый сайдбар-->
+
+      <div class="sb_block">
+        <!--блоки для правого сайдбара-->
+        <div class="sb_title"><b>Разделы блога</b></div>
+        <nav class="slide-menu" id="example-menu">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+              <ul>
+                <li><a href="#">Submenu entry 1</a></li>
+                <li><a href="#">Submenu entry 2</a></li>
+                <li><a href="#">Submenu entry 3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="f_cont">
+      <div class="f_info">
+        <b>Автор блога: В.А. Хаткевич (SEVA77, 4SEVA77, CEBA77)<br>Копирование контента и размещение на других сайтах запрещено.</b>
+      </div>
+      <div class="f_icons">
         <a href="#"><img src="assets/img/icons/Rss_.png" alt="Rss"></a>
         <a href="#"><img src="assets/img/icons/Github_.png" alt="Github"></a>
         <a href="#"><img src="assets/img/icons/Twitter_.png" alt="Twitter"></a>
         <a href="#"><img src="assets/img/icons/Vk_.png" alt="VK"></a>
         <a href="#"><img src="assets/img/icons/Youtube_.png" alt="Youtube"></a>
         <a href="#"><img src="assets/img/icons/Instagram_.png" alt="Instagram"></a>
-        </div>
-        </div>
-    </footer>
-    <!--Вспомогательные элементы-->
-<div id="modal_menu" class="modal_div">
-   <span class="modal_close">Закрыть</span>
-   <!--Здесь размещаем информацию которая будет в модальном окне.-->
-</div>
-<div class="overlay" onclick="close_menu()"></div><!-- Пoдлoжкa, oднa нa всю стрaницу -->
+      </div>
+    </div>
+  </footer>
+  <!--Вспомогательные элементы-->
+  <div id="modal_menu" class="modal_div">
+    <span class="modal_close">Закрыть</span>
+    <!--Здесь размещаем информацию которая будет в модальном окне.-->
+  </div>
+  <div class="overlay" onclick="close_menu()"></div><!-- Пoдлoжкa, oднa нa всю стрaницу -->
 
 </body>
 
