@@ -262,41 +262,41 @@ tbody {
 }
 
 th {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   text-align: left;
   padding: 0 5px;
 }
 
 td {
+  font-size: 15px;
   border: 1px solid black;
   padding: 5px;
 }
 
 blockquote {
 
-  font-style: italic;
-  font-size: 17px;
+  /*font-size: 15px;*/
   border-top: 3px solid #333;
   border-bottom: 3px solid #333;
-  padding: 10px 20px;
-  padding-left: 50px;
+  padding: 10px 20px 10px 80px;
 }
 
 blockquote:before {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'fontello', serif;
   font-style: italic;
   font-weight: 400;
-  font-size: 90px;
-  height: 90px;
+  font-size: 45px;
+  /*height: 90px;*/
   margin-left: -60px;
-  margin-top: -25px;
-  content: "‟";
+  /*margin-top: -25px;*/
+  content: "\e811";
   display: block;
   float: left;
 }
 
 code{
+  font-size: 13px;
   background-color: #CCCCCC;
   padding: 0 2px;
   border-radius: 3px
@@ -926,15 +926,28 @@ code{
   }
 
   blockquote {
-    font-size: 15px;
+    /*font-size: 15px;*/
   }
 
+  blockquote:before {
+    font-size: 39px
+  }
+
+  code {
+    font-size: 11px;
+  }
   .f_icons > a > img {
     height: 30px;
   }
 
   .intro img {
     height: 15px
+  }
+    th {
+    font-size: 14px;
+  }
+    td {
+    font-size: 13px;
   }
   /*Декорация гвозди (или кнопки)*/
     .header_inner::before,
@@ -986,15 +999,24 @@ code{
     margin-bottom: 10px;
 }
   blockquote {
-    font-size: 12px;
-    margin-inline-start: 20px;
-    margin-inline-end: 20px;
+    /*font-size: 12px;*/
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
+    padding: 5px 10px 5px 40px;
 }
   blockquote:before {
-    font-size: 70px
+    font-size: 23px;
+    margin-left: -32px;
+    margin-top: 3px;
+  }
+  code {
+    font-size: 7px;
   }
   th {
     font-size: 10px;
+  }
+  td {
+    font-size: 9px;
   }
   .sidebarr {
     flex-basis: 200px;
@@ -1041,12 +1063,12 @@ code{
 /*Шрифт иконок из fontello.com */
 @font-face {
       font-family: 'fontello';
-      src: url('../font/fontello.eot?13982947');
-      src: url('../font/fontello.eot?13982947#iefix') format('embedded-opentype'),
-           url('../font/fontello.woff2?13982947') format('woff2'),
-           url('../font/fontello.woff?13982947') format('woff'),
-           url('../font/fontello.ttf?13982947') format('truetype'),
-           url('../font/fontello.svg?13982947#fontello') format('svg');
+      src: url('../font/fontello.eot?43347959');
+      src: url('../font/fontello.eot?43347959#iefix') format('embedded-opentype'),
+           url('../font/fontello.woff2?43347959') format('woff2'),
+           url('../font/fontello.woff?43347959') format('woff'),
+           url('../font/fontello.ttf?43347959') format('truetype'),
+           url('../font/fontello.svg?43347959#fontello') format('svg');
       font-weight: normal;
       font-style: normal;
     }
@@ -1084,6 +1106,7 @@ code{
   /* Uncomment for 3D effect */
   /*text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
+
 .icon-calendar:before { content: '\e800'; } /* '' */
 .icon-music:before { content: '\e801'; } /* '' */
 .icon-tags:before { content: '\e802'; } /* '' */
@@ -1101,6 +1124,7 @@ code{
 .icon-terminal:before { content: '\e80e'; } /* '' */
 .icon-mail:before { content: '\e80f'; } /* '' */
 .icon-folder:before { content: '\e810'; } /* '' */
+.icon-quote:before { content: '\e811'; } /* '' */
 .icon-github-circled-alt:before { content: '\f053'; } /* '' */
 .icon-twitter:before { content: '\f058'; } /* '' */
 .icon-folder-open:before { content: '\f068'; } /* '' */
