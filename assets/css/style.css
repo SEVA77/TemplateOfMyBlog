@@ -972,7 +972,7 @@ code{
 }
 @media (max-width: 450px) {
   #header {
-    margin: 5px 24px;
+    margin: 5px 9px;
   }
     body,
   .text_intro,
@@ -981,18 +981,18 @@ code{
     margin: 0 5px;
   }
   .intro {
-    margin: 15px 26px 26px 26px;
+    margin: 15px 10px 26px;
   }
   .header_logo > a > img {
     height: 60px;
     margin: 0 10px;
   }
-    .f_info {
+  .f_info {
     font-size: 10px;
     text-align: center
   }
   .paper {
-    margin: 0 20px 20px;
+    margin: 0 7px 20px 1px;
     padding: 15px 20px 20px
   }
   .paper h1, .paper h2, .paper h3, .paper h4, .paper h5, .paper h6, .paper p, .paper pre, .paper ul, .paper ol, .paper dl, .paper table, .paper blockquote {
@@ -1034,7 +1034,10 @@ code{
   .f_info {
     margin: 10px 10px 0
   }
-  .article {padding: 10px 0 30px 0;}
+  .article {
+    padding: 10px 0 30px 0;
+    margin: 0px 15px 50px 8px;
+  }
   .article_img {
     margin: 8px 0;
     padding: 15px 15px 48px;
@@ -1056,7 +1059,7 @@ code{
   }
   .footer {
     margin: 15px auto;
-    max-width: 85vw;
+    max-width: 90vw;
   }
 }
 
