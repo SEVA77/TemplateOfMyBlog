@@ -10,14 +10,29 @@ License: MIT License (see LICENSE)
 <head>
   <meta charset="UTF-8">
   <title>Test site</title>
-  <!--<meta name="description" content="{{ page.description }}">-->
-  <!--<meta property="og:image" content="{{ page.image }}">-->
   <!--<link rel="icon" href="/icon.ico">-->
   <!--<link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Предзагрузка базовых ресурсов-->
+  <link rel="preload" href="/assets/css/style.css" as="style">
+  <link rel="preload" href="/assets/final_logo2_var2.png" as="image">
+  <link rel="preload" href="/assets/img/background12.png" as="image">
+  <link rel="preload" href="/assets/img/white-paper.jpg" as="image">
+  <link rel="preload" href="/assets/img/post%20divider_scroll.png" as="image">
+
+  <!-- Преконнекты убираем т.к. гугловские шрифты больше не используем!
+  <link rel= "preconnect" href="fonts.googleapis.com">
+  <link rel= "preconnect" href="fonts.gstatic.com">
+  -->
+
+      <!--Подключение ресурсов-->
+  
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Гугловские шрифты больше не используем!
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap&subset=cyrillic" rel="stylesheet">
+  -->
   <link rel="stylesheet" href="assets/css/slide-menu.css">
   <script type="text/javascript" src="assets/js/slide-menu.js"></script>
   <script src="assets/js/sys.js"></script>

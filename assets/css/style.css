@@ -4,6 +4,47 @@
  * License: MIT License (see LICENSE)
  */
 
+
+/*Подключаем шрифты: */
+
+@font-face {
+	font-family: 'Roboto Slab';
+  font-style: normal;
+  font-display: swap;
+	/*src: url(../font/roboto/RobotoSlab-VariableFont_wght.ttf);*/
+  src: url('../font/roboto/RobotoSlab-VariableFont_wght.eot') format('embedded-opentype'),
+  url('../font/roboto/RobotoSlab-VariableFont_wght.woff2') format('woff2'),
+  url('../font/roboto/RobotoSlab-VariableFont_wght.woff') format('woff'),
+  url('../font/roboto/RobotoSlab-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+	/*src: url(../font/roboto/Roboto-Regular.ttf);*/
+  src: url('../font/roboto/Roboto-Regular.eot') format('embedded-opentype'),
+  url('../font/roboto/Roboto-Regular.woff2') format('woff2'),
+  url('../font/roboto/Roboto-Regular.woff') format('woff'),
+  url('../font/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+	/*src: url(../font/roboto/Roboto-Bold.ttf);*/
+  src: url('../font/roboto/Roboto-Bold.eot') format('embedded-opentype'),
+  url('../font/roboto/Roboto-Bold.woff2') format('woff2'),
+  url('../font/roboto/Roboto-Bold.woff') format('woff'),
+  url('../font/roboto/Roboto-Bold.ttf') format('truetype');
+}
+
+/*-------------------*/
+
+
 html {
   height: 100%;
   overflow-x: hidden;
@@ -16,6 +57,7 @@ body {
   font-size: 16px;
   line-height: 1.6;  /* межстрочн. отступ*/
   height: 100%;
+  /*background-image: url(/assets/img/bgbg.jpg);*/
   background-image: url(/assets/img/background12.png);
   /*background-attachment: fixed;*/ /*типо паралакс*/
   /*background-repeat: no-repeat;*/
@@ -133,15 +175,15 @@ h1,h2,h3,h4,h5 {
 
 .intro img {
   height: 30px;
-  margin: 5px
+  margin: 6px
 }
 
 .text_intro {
-  margin: 0 15px;
+  margin: 0px 15px;
   font-size: 19px;
   font-weight: 700;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.5;
   color: #555555;
   font-family: 'Roboto', sans-serif;
 }
@@ -325,6 +367,54 @@ code{
 .paper p,.paper ul,.paper li,.paper table {
   font-family: 'Roboto', sans-serif;
 }
+
+/* Оглавление */
+
+
+#markdown-toc {
+    /*margin: -16px 0 10px;*/
+    /*background-color: #F9F9F9;
+    border: 1px solid #AAAAAA;*/
+    padding: 10px 15px;
+    list-style: none;
+    border: 1px solid #000;
+    background: #f1efee;
+}
+#markdown-toc a {
+    color: black;
+    border: 1px solid transparent;
+    margin: 0;
+    padding: 1px;
+    display: block;
+    text-decoration: none;
+}
+#markdown-toc a:hover{
+    color: black;
+    background: rgba(0, 0, 0, 0.25);
+    margin: 0;
+    border: 1px dashed DarkGray;
+}
+#markdown-toc li {
+    margin: 0;
+    list-style-image: none;
+    list-style-type: none;
+}
+#markdown-toc ul {
+    list-style-image: none;
+    list-style-type: none;
+    margin:0 8px 0 1em;
+    padding-left: 0;
+}
+#markdown-toc ul ul {
+    margin: 0 0 0 1em;
+}
+
+#markdown-toc ul li {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0
+}
+
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
