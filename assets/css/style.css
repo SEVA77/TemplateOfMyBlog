@@ -210,6 +210,55 @@ h1,h2,h3,h4,h5 {
   z-index: 1;
 }
 
+/*Пагинация*/
+
+.pager_list{
+  min-height: 10px !important;
+  padding: 30px 6px;
+}
+
+.pager {
+  margin: 3.5px 0 0;
+  padding: 0;
+}
+
+ul.pager { 
+  text-align: center;
+  list-style: none;
+}
+ul.pager li {
+  display: inline;
+  margin: 4px;
+}
+
+.numpage {
+  padding: 7px 13px !important;
+}
+
+ul.pager a, ul.pager span {
+  padding: 7px;
+  text-decoration: none;  /* Убираем подчёркивание */
+  border-left: 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px rgba(0, 0, 0, 0.1);
+  line-height: 3;  /* межстрочн. отступ*/
+}
+
+ul.pager a {
+  color: #000;  /* Цвет текста */
+  background: rgba(0, 0, 0, 0.2);
+}
+
+ul.pager span {
+  background: rgba(0, 0, 0, 0.1);
+  color: gray;
+}
+
+ul.pager a:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to bottom, #F5F5F5, #A9A9A9);  /*Градиент*/
+  cursor: pointer;
+}
+
 .sidebarr {  /*Правая колонка*/
   flex-basis: 280px;
   flex-shrink: 0;
@@ -233,7 +282,7 @@ h1,h2,h3,h4,h5 {
 }
 
 /*САМА СТАТЬЯ (БУМАГА)*/
-.paper {
+.paper, .pager_list {
   width: auto;
   min-height: 250px;
   margin: 0px 20px 44px 5px;
@@ -244,6 +293,10 @@ h1,h2,h3,h4,h5 {
   -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+
+}
+
+.paper {
   -webkit-border-bottom-right-radius: 6px 50px;
   -moz-border-radius-bottomright: 6px 50px;
   border-bottom-right-radius: 6px 50px;
@@ -341,7 +394,8 @@ code{
   font-size: 13px;
   background-color: #CCCCCC;
   padding: 0 2px;
-  border-radius: 3px
+  border-radius: 3px;
+  overflow-x: auto
 }
 
 .video-container {
@@ -687,6 +741,11 @@ code{
 
 /*ДОПОЛНИТЕЛЬНО:*/
 
+/*Отключить подсветку кода*/
+.no_hlt span {
+  color: #68615e !important
+}
+
 /*Декорация гвозди (или кнопки)*/
 .header_inner::before,
 .text_intro::before,
@@ -702,7 +761,11 @@ code{
 .f_cont::after,
 .sb_block::after,
 .paper::before,
-.paper::after {
+.paper::after,
+.pager_list::before,
+.pager_list::after,
+.pager::before,
+.pager::after {
   content: "";
   position: absolute;
   display: block;
@@ -718,7 +781,8 @@ code{
 .header_inner::before,
 .text_intro::before,
 .footer::before,
-.paper::before {
+.paper::before,
+.pager_list::before {
   left: 8px;
   top: 8px;
 }
@@ -726,21 +790,24 @@ code{
 .header_inner::after,
 .text_intro::after,
 .footer::after,
-.paper::after {
+.paper::after,
+.pager_list::after {
   right: 8px;
   top: 8px;
 }
 
 #header::before,
 .intro::before,
-.f_cont::before {
+.f_cont::before,
+.pager::before {
   left: 8px;
   bottom: 8px;
 }
 
 #header::after,
 .intro::after,
-.f_cont::after {
+.f_cont::after,
+.pager::after {
   right: 8px;
   bottom: 8px;
 }
@@ -796,6 +863,7 @@ code{
   width: 280px;
   height: 360px;  /*(24px * 15 гипотетич. пунктов)*/
   padding: 3px;
+  font-family: 'Roboto', sans-serif;
   /*background-image: url(/assets/img/white-paper.png);*/
   /*    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
@@ -892,7 +960,7 @@ code{
   }
 
   .article_img_tape {
-    left: 23vw;
+    left: calc(54vw - 300px);
     top: -8px;
     width: 80px;
   }
@@ -981,7 +1049,7 @@ code{
   }
 
   .article_img_tape {
-    left: 120px;
+    left: 125px;
     top: -4px;
     width: 65px;
   }
@@ -1029,7 +1097,7 @@ code{
   }
 
   .article_img_tape {
-    left: calc(34vw + 3px);
+    left: calc(50vw - 85px);
     width: 88px;
   }
 }
@@ -1040,10 +1108,6 @@ code{
   .text_intro,
   .nav_link {
     font-size: 14px;
-  }
-
-  .article_img_tape {
-    left: calc(34vw + 3px);
   }
 
   .header_logo > a > img {
@@ -1185,7 +1249,7 @@ code{
     padding: 15px 15px 48px;
 }
   .article_img_tape {
-    left: calc(34vw - 3px);
+    left: calc(49vw - 55px);
     width: 60px;
     height: 30px
 }
@@ -1209,33 +1273,40 @@ code{
   body,
   th,
   .text_intro,
-  .nav_link,
+  /*.nav_link,*/
   .f_info {
-    font-size: 10px;
+    font-size: 12px;
   }
+  .nav_link {
+    font-size: 11px;
+  }
+  /*
   code {
     font-size: 7px;
   }
   td {
     font-size: 9px;
   }
+  */
   .f_icons > a > img {
     height: 22px;
   }
+
 }
 
 /*Шрифт иконок из fontello.com */
 @font-face {
-      font-family: 'fontello';
-      src: url('../font/fontello.eot?43347959');
-      src: url('../font/fontello.eot?43347959#iefix') format('embedded-opentype'),
-           url('../font/fontello.woff2?43347959') format('woff2'),
-           url('../font/fontello.woff?43347959') format('woff'),
-           url('../font/fontello.ttf?43347959') format('truetype'),
-           url('../font/fontello.svg?43347959#fontello') format('svg');
-      font-weight: normal;
-      font-style: normal;
-    }
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?42307500');
+  src: url('../font/fontello.eot?42307500#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?42307500') format('woff2'),
+       url('../font/fontello.woff?42307500') format('woff'),
+       url('../font/fontello.ttf?42307500') format('truetype'),
+       url('../font/fontello.svg?42307500#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
@@ -1261,14 +1332,14 @@ code{
   margin-left: .2em;
 
   /* you can be more comfortable with increased icons size */
-   font-size: 116%;
+  /* font-size: 120%; */
 
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   /* Uncomment for 3D effect */
-  /*text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
 .icon-calendar:before { content: '\e800'; } /* '' */
@@ -1289,6 +1360,24 @@ code{
 .icon-mail:before { content: '\e80f'; } /* '' */
 .icon-folder:before { content: '\e810'; } /* '' */
 .icon-quote:before { content: '\e811'; } /* '' */
+.icon-left:before { content: '\e812'; } /* '' */
+.icon-right:before { content: '\e813'; } /* '' */
+.icon-cog:before { content: '\e814'; } /* '' */
+.icon-lightbulb:before { content: '\e815'; } /* '' */
+.icon-left-circled:before { content: '\e816'; } /* '' */
+.icon-right-circled:before { content: '\e817'; } /* '' */
+.icon-backward:before { content: '\e818'; } /* '' */
+.icon-backward-circled:before { content: '\e819'; } /* '' */
+.icon-forward:before { content: '\e81a'; } /* '' */
+.icon-forward-circled:before { content: '\e81b'; } /* '' */
+.icon-attention:before { content: '\e81c'; } /* '' */
+.icon-cd:before { content: '\e81d'; } /* '' */
+.icon-cog-1:before { content: '\e81e'; } /* '' */
+.icon-cog-2:before { content: '\e820'; } /* '' */
+.icon-beaker:before { content: '\e821'; } /* '' */
+.icon-asterisk:before { content: '\e822'; } /* '' */
+.icon-puzzle-outline:before { content: '\e823'; } /* '' */
+.icon-puzzle:before { content: '\e824'; } /* '' */
 .icon-github-circled-alt:before { content: '\f053'; } /* '' */
 .icon-twitter:before { content: '\f058'; } /* '' */
 .icon-folder-open:before { content: '\f068'; } /* '' */
@@ -1297,6 +1386,7 @@ code{
 .icon-apple:before { content: '\f179'; } /* '' */
 .icon-windows:before { content: '\f17a'; } /* '' */
 .icon-linux:before { content: '\f17c'; } /* '' */
+.icon-cube:before { content: '\f1b2'; } /* '' */
 .icon-file-pdf:before { content: '\f1c1'; } /* '' */
 .icon-file-word:before { content: '\f1c2'; } /* '' */
 .icon-file-excel:before { content: '\f1c3'; } /* '' */
@@ -1309,6 +1399,7 @@ code{
 .icon-microchip:before { content: '\f2db'; } /* '' */
 .icon-github:before { content: '\f300'; } /* '' */
 .icon-facebook:before { content: '\f30c'; } /* '' */
+.icon-youtube:before { content: '\f313'; } /* '' */
 .icon-instagram:before { content: '\f32d'; } /* '' */
 .icon-skype:before { content: '\f339'; } /* '' */
 

@@ -1,0 +1,16 @@
+.slide-menu {
+    transform: none !important;
+    overflow: auto !important;
+    transition: none !important;
+    will-change: unset !important;
+}
+.slide-menu ul ul {
+    position: static !important;
+    display: block !important;
+    margin-left: 18px;
+}
+.slide-menu li ul {
+    position: static !important;
+    display: block !important;
+    margin-left: 18px;
+}
